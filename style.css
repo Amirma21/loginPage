@@ -10,7 +10,7 @@
 
 body {
     direction: rtl;
-    font-family: "vazir";
+    font-family: "vazir" !important;
 }
 
 .contaienr {
@@ -50,41 +50,83 @@ body {
     z-index: 1;
 }
 
-.dynamic-btn{
+.dynamic-btn {
     position: absolute;
-    background: linear-gradient(rgb(248, 93, 93),rgb(247, 60, 60));
+    background: linear-gradient(rgb(248, 93, 93), rgb(247, 60, 60));
     width: 50%;
     height: 100%;
-    top: 0 ;
+    top: 0;
     right: 0;
     border-radius: 20px;
 }
 
-.social-box{
+.social-box {
     width: 60%;
-
     margin: 1rem auto;
     display: flex;
     justify-content: space-between;
- 
 }
-.social{
+
+.social {
     font-size: 2rem;
     transition: all .5s ease-in-out;
 }
 
-.social:hover{
+.social:hover {
     transform: translateY(-5px);
 }
 
-.fa-instagram{
-color: #CB299A;
+.fa-instagram {
+    color: #CB299A;
 }
 
-.fa-github{
+.fa-github {
     color: #171515;
 }
 
-.fa-telegram{
-color: #0088cc ;
+.fa-telegram {
+    color: #0088cc;
+}
+
+.loginform {
+    width: 70%;
+    margin: 1rem auto;
+    position: relative;
+    /* right: -500px;
+    visibility: hidden;*/
+} 
+
+.login-input {
+    font-family: "vazir" !important;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border: 1px solid rgba(0, 0, 0, .4);
+    outline: none;
+}
+
+input#remember {
+    transform: translateY(3px);
+    margin-left: 2px;
+    background-color: salmon;
+    
+}
+
+
+label {
+    color: salmon;
+    color: rgba(0, 0, 0, .4);
+    font-size: 13px;
+}
+.log-btn{
+    width: 100%;
+    margin-top: 1rem;
+    padding: .6rem 0;
+    font-family: "vazir";
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    background:linear-gradient(rgb(248, 93, 93), rgb(247, 60, 60));;
+
 }
