@@ -25,7 +25,7 @@ body {
 
 .form-box {
     width: 20rem;
-    height: 29rem;
+    height: auto;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -107,6 +107,34 @@ body {
     outline: none;
 }
 
+.show-icon-parent{
+    position: relative;
+}
+
+.show-icon{
+    position: absolute;
+    top: 33.5%;
+    left: 6%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.show-icon::after{
+    content: " ";
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 0px;
+    height: 20px;
+  background-color:#000 ;
+    transform: rotate(45deg);
+}
+
+.show-icon.hide::after{
+    width: 2px;
+}
+
 input#remember {
     transform: translateY(3px);
     margin-left: 2px;
@@ -121,7 +149,7 @@ label {
 
 .log-btn {
     width: 100%;
-    margin-top: 1rem;
+    margin: 1rem 0;
     padding: .6rem 0;
     font-family: "vazir";
     border-radius: 20px;
